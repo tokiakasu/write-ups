@@ -49,6 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 It's JavaScript. I didn't know JS at all, so I had to watch Youtube. 
 > Learn JavaScript in 12 minutes: https://youtu.be/Ukg_U3CnJWI
+
 > JavaScript Array Map: https://youtu.be/G3BS3sh3D8Q
 
 After watching it, I begin to understand the script and now it remains to explain to myself what parts of the code do.
@@ -57,8 +58,11 @@ After watching it, I begin to understand the script and now it remains to explai
 
 ### Links
 > ASCII table: asciitable.com
+
 > hex converter: hexadecimaldictionary.com
+
 > JS Event Keycodes: keycode.info
+
 > Online board: app.ziteboard.com
 
 
@@ -77,4 +81,3 @@ while True:
 With the formula I got the password "GoodPassword", the password was correct and I successfully logged in.
 
 ![flag](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/flag.png)
-
