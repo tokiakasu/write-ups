@@ -4,7 +4,7 @@ Category: `web(?)`
 ## Description
 > Challenge: CCTV (rev)
 You arrive at your destination. The weather isn't great, so you figure there's no reason to stay outside and you make your way to one of the buildings. No one bothered you so far, so you decide to play it bold - you make yourself a cup of coffee in the social area like you totally belong here and proceed to find an empty room with a desk and a chair. You pull out our laptop, hook it up to the ethernet socket in the wall, and quickly find an internal CCTV panel - that's a way better way to look around unnoticed. Only problem is... it wants a password.
-https://cctv-web.2021.ctfcompetition.com/
+> https://cctv-web.2021.ctfcompetition.com/
 
 ## Analysis
 When we enter the site, we see a login form that requires a password.
@@ -13,13 +13,41 @@ When we enter the site, we see a login form that requires a password.
 
 Based on past experience, I tried to look through the source code of the page and found a script with the "checkPassword" function, just what I needed!
 
-![script](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/script.png)
+```
+const checkPassword = () => {
+  const v = document.getElementById("password").value;
+  const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
 
-I wasn't sure what language it was, so I went to dpaste.com to determine the programming language.
+  if(p[0] === 52037 &&
+     p[6] === 52081 &&
+     p[5] === 52063 &&
+     p[1] === 52077 &&
+     p[9] === 52077 &&
+     p[10] === 52080 &&
+     p[4] === 52046 &&
+     p[3] === 52066 &&
+     p[8] === 52085 &&
+     p[7] === 52081 &&
+     p[2] === 52077 &&
+     p[11] === 52066) {
+    window.location.replace(v + ".html");
+  } else {
+    alert("Wrong password!");
+  }
+}
 
-![language](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/language.png)
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("go").addEventListener("click", checkPassword);
+  document.getElementById("password").addEventListener("keydown", e => {
+    if (e.keyCode === 13) {
+      checkPassword();
+    }
+  });
+}, false);
 
-So, it's JavaScript. I didn't know JS at all, so I had to watch Youtube. 
+```
+
+It's JavaScript. I didn't know JS at all, so I had to watch Youtube. 
 > Learn JavaScript in 12 minutes: https://youtu.be/Ukg_U3CnJWI
 > JavaScript Array Map: https://youtu.be/G3BS3sh3D8Q
 
@@ -49,3 +77,4 @@ while True:
 With the formula I got the password "GoodPassword", the password was correct and I successfully logged in.
 
 ![flag](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/flag.png)
+
