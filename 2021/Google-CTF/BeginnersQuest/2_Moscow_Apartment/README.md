@@ -11,6 +11,8 @@ It turned out suspect's appartment has an electronic lock. After analyzing the P
 We are given a ZIP-archive, unzip it and we get a picture that looks like an electric circuit and hint for the flag" 
 `Flag: "CTF{" + inputs that need to be set, sorted + "}"`
 
+![logiclock](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/2_Moscow_Apartment/images/logic-lock.png)
+
 This was the first time I had seen anything like this, so I started googling "electrical circuit input abc" and immediately saw the term "logic gates"
 
 > Explanation of logic gates: build-electronic-circuits.com/logic-gates/
