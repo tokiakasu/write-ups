@@ -7,3 +7,4 @@
 
 ## Write-ups
 - Novosibirsk - Chemical plant
+- Moscow - Apartment

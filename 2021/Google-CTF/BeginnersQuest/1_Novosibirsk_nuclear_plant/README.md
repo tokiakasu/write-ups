@@ -1,5 +1,5 @@
 ## Novosibirsk - Chemical plant
-Category: `web(?)`
+Category: `rev`
 
 ## Description
 > Challenge: CCTV (rev)
