@@ -22,7 +22,7 @@ Now I started thinking
 
 Here I thought that all if the letters have 1 and if I put them through the logic gate, I would know which letters are actually entered (spoiler: it was a waste of time). After a full day of research, going over my own thoughts, my friend came over and said: "Lolz, it's easy, just do the reverse" We found a board, started drawing logic gates, putting 1 through all the logic gates.
 
-![board](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/2_Moscow_Apartment/images/board.png)
+![board](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/2_Moscow_Apartment/images/board.jpg)
 
 We get the sequence "0110010011", which means the input letters "BCFIJ". 
 
