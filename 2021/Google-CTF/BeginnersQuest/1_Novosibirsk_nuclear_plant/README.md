@@ -10,7 +10,7 @@ You arrive at your destination. The weather isn't great, so you figure there's n
 ## Analysis
 When we enter the site, we see a login form that requires a password.
 
-![form](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/login.png)
+![form](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/1_Novosibirsk_nuclear_plant/images/login.png)
 
 Based on past experience, I tried to look through the source code of the page and found a script with the "checkPassword" function, just what I needed!
 
@@ -55,7 +55,7 @@ It's JavaScript. I didn't know JS at all, so I had to watch Youtube.
 
 After watching it, I begin to understand the script and now it remains to explain to myself what parts of the code do.
 
-![explanation](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/code_explanation.png)
+![explanation](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/1_Novosibirsk_nuclear_plant/images/code_explanation.png)
 
 ### Links
 > ASCII table: asciitable.com
@@ -81,4 +81,4 @@ while True:
 
 With the formula I got the password "GoodPassword", the password was correct and I successfully logged in.
 
-![flag](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/level_1/images/flag.png)
+![flag](https://github.com/curvtd/write-ups/blob/master/2021/Google-CTF/BeginnersQuest/1_Novosibirsk_nuclear_plant/images/flag.png)
