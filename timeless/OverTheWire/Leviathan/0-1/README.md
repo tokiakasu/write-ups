@@ -1,4 +1,4 @@
-## Leviathan 0
+## Leviathan 0-1
 Category: `unix`
 
 ## Description

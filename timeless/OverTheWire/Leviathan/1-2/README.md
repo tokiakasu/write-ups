@@ -1,4 +1,4 @@
-## Leviathan 1
+## Leviathan 1-2
 Category: `binary`
 
 ## Description
