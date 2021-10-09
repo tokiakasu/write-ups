@@ -55,6 +55,6 @@ Enter the password> snlprintf
 $ whoami
 leviathan4
 $ cat /etc/leviathan_pass/leviathan4
-vuH0coox6m
+leviathan4_password
 ```
 

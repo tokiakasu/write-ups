@@ -61,6 +61,6 @@ leviathan2@leviathan:~$
 Now we can check thepassword for this user in /etc/leviathan_pass
 ```
 leviathan2@leviathan:~$ cat /etc/leviathan_pass/leviathan2
-ougahZi8Ta
+leviathan2_password
 ```
 
